@@ -69,7 +69,8 @@ p{
     object-fit: contain;
 }
 
-.nav {
+header .nav {
+    position: fixed;
     width: 21.875rem;
     height: 100vh;
     background-color: #403177;
