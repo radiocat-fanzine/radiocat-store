@@ -20,13 +20,52 @@ body{
     margin: 0;
 }
 header{
+    top: 0;
     font-family: "Raleway", serif;
     font-weight: 500;
     font-style: italic;
     font-size: 1.75rem;
+    position: fixed;
+    background-color: #403177;
+    width: 21.25rem;
+    height: 100vh;
+    margin: 0;
+    transform: translateX(21.25rem);
 }
+
+@media  screen and (min-width: 46.5rem) {
+    header{
+        transform: translateX(-18.125rem);
+    }
+}
+
+@media  screen and (min-width: 64rem) {
+    header{
+        transform: translateX(0);
+        }
+}
+
+main{
+    margin-left: 0;
+    min-height: 100vh;
+    background-color: #FBF2F2;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 0;
+}
+@media  screen and (min-width: 46.5rem) {
+    main{
+        margin-left: 2.5rem;
+        }
+}
+@media  screen and (min-width: 64rem) {
+    main{
+        margin-left: 21.25rem;
+        }
+}
+
 a{
-    color: #403177;
+    color: #FBF2F2;
     text-decoration: none;
 }
 ul{
@@ -40,6 +79,8 @@ h1{
     font-family: "Raleway", serif;
     font-style: normal;
     font-weight: 450;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 }
 
 h2{
@@ -48,6 +89,8 @@ h2{
     font-family: "Raleway", serif;
     font-style: normal;
     font-weight: 450;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 }
 h3{
     color: #403177;
@@ -55,6 +98,8 @@ h3{
     font-family: "Raleway", serif;
     font-style: normal;
     font-weight: 600;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 }
 p{
     color: #403177;
@@ -62,46 +107,47 @@ p{
     font-family: "Raleway", serif;
     font-style: normal;
     font-weight: 400;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 }
 .navLogo{
     width: 15.25rem;
     height: 5.625rem;
     object-fit: contain;
-}
-
-header .nav {
-    position: fixed;
-    width: 21.875rem;
-    height: 100vh;
-    background-color: #403177;
-
-}
-.footerLogo{
-    width: 7.5rem;
-    height: 2.8125rem;
-    object-fit: contain;
-}
-
-footer div ul a .footerMenu{
-    color: #AE2798;
-}
-
-.footerMenu{
-    color: #AE2798;
-}
+    margin-left: 1.875rem;
+    }
 
 .subheaderMenu{
     background-color: #A2FAA3;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    font-family: "Raleway", serif;
+    font-style: normal;
 }
+.subheaderMenu a{
+    color: #403177;
+    text-align: center;
+    font-weight: 600;
+    padding-right: 3.125rem;
+}
+
+body main section .contactInfo{
+    padding-left: 3.125rem;
+}
+
 .buttonActive{
     background-color: #A2FAA3;
     border: none;
+    padding: .75rem 1.5rem;
+    border-radius: .3125rem;
 }
 
 .buttonBuy{
     background-color: #F97068;
     border: none;
     font-weight: bold;
+    padding: .75rem 1.5rem;
+    border-radius: .3125rem;
 }
 .newItems .buttonBuy .buttonBuyFont{
     color: #FBF2F2;
@@ -124,12 +170,34 @@ footer div ul a .footerMenu{
     object-fit: contain;
 }
 
+.selectedItem{
+    color: #F97068;
+
+}
+
 footer{
-    color: #AE2798;
+    color: #FBF2F2;
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 450;
+    position: absolute;
+    bottom: 0;
+    font-weight: 500;
 }
+
 footer h2{
-    color: #AE2798;
+    color: #FBF2F2;
+    font-weight: 450;
+    padding-left: 2.5rem;
+}
+
+footer div ul a .footerMenu .selectedItem{
+    color: #F97068;
+}
+
+.footerSocials{
+    padding-left: 2.5rem;
+}
+
+.footerForm ul li{
+    padding-bottom: 1rem;
 }

@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header class="headerIndex">
+        <header>
             <!-- Aquí va el logo -->
             <a href="#"><img src="./assets/img/radiocattypo.png" alt="Radiocat" class="navLogo"></a>
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" class="selectedItem">HOME</a></li>
                     <li><a href="./pages/illustration.html">ILLUSTRATION</a></li>
                     <li><a href="./pages/fanzines.html">FANZINES</a></li>
                     <li><a href="./pages/video.html">VIDEO</a></li>
@@ -40,26 +40,26 @@
         </main>
 
         <footer>
-            <!-- Aquí va el logo -->
-            <div>
-                <img src="./assets/img/radiocattypo.png" alt="Radiocat" class="footerLogo">
-            </div>
             <div>
                 <ul>
-                    <li><a href="./pages/about.html" class="footerMenu">About</a></li>
-                    <li><a href="./pages/contact.html" class="footerMenu">Contact</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
                 <h2>Follow me!</h2>
-                <section class="footerMenu">
-                    <a href="https://www.instagram.com/radiocat_fanzine" target="_blank" class="footerMenu">instagram</a>
-                    <a href="https://www.behance.net/radiocat_fanzine" target="_blank" class="footerMenu">behance</a>
-                    <a href="https://www.linkedin.com/in/luzmila-quezada-radiocat/" target="_blank" class="footerMenu">linkedin</a>
+                <section class="footerSocials">
+                    <a href="https://www.instagram.com/radiocat_fanzine" target="_blank">instagram</a>
+                    <a href="https://www.behance.net/radiocat_fanzine" target="_blank">behance</a>
+                    <a href="https://www.linkedin.com/in/luzmila-quezada-radiocat/" target="_blank">linkedin</a>
                 </section>
                 <h2>Suscribe!</h2>
-                <form action="URL DE DESTINO" method="post"></form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required>
-                <button class="buttonActive"><a href="">Send</a></button>
+                <section class="footerForm">
+                    <ul>
+                        <li><form action="URL DE DESTINO" method="post"></form></li>
+                        <li><label for="email">Email:</label></li>
+                        <li><input type="email" id="email" name="email" placeholder="Your email" required></li>
+                        <li><button id="buttonSend" class="buttonActive"><a href="">Send</a></button></li>
+                    </ul>
+                </section>
             </div>
         </footer>
     <!--  -->

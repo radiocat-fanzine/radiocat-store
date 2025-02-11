@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="headerVideo">
+    <header>
         <!-- Aquí va el logo -->
         <a href="../index.html"><img src="../assets/img/radiocattypo.png" alt="Radiocat" class="navLogo"></a>
         <nav>
@@ -15,7 +15,7 @@
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="./illustration.html">ILLUSTRATION</a></li>
                 <li><a href="./fanzines.html">FANZINES</a></li>
-                <li><a href="#">VIDEO</a></li>
+                <li><a href="#" class="selectedItem">VIDEO</a></li>
                 <li><a href="./artshop.html">ARTSHOP</a></li>
             </ul>
             
@@ -42,26 +42,26 @@
     </main>
 
     <footer>
-        <!-- Aquí va el logo -->
-        <div>
-            <img src="../assets/img/radiocattypo.png" alt="Radiocat" class="footerLogo">
-        </div>
         <div>
             <ul class="footerMenu">
-                <li><a href="./about.html" class="footerMenu">About</a></li>
-                <li><a href="./contact.html" class="footerMenu">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
             <h2>Follow me!</h2>
-            <section class="footerMenu">
-                <a href="https://www.instagram.com/radiocat_fanzine" target="_blank" class="footerMenu">instagram</a>
-                <a href="https://www.behance.net/radiocat_fanzine" target="_blank" class="footerMenu">behance</a>
-                <a href="https://www.linkedin.com/in/luzmila-quezada-radiocat/" target="_blank" class="footerMenu">linkedin</a>
+            <section class="footerSocials">
+                <a href="https://www.instagram.com/radiocat_fanzine" target="_blank">instagram</a>
+                <a href="https://www.behance.net/radiocat_fanzine" target="_blank">behance</a>
+                <a href="https://www.linkedin.com/in/luzmila-quezada-radiocat/" target="_blank">linkedin</a>
             </section>
             <h2>Suscribe!</h2>
-            <form action="URL DE DESTINO" method="post"></form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
-                <button class="buttonActive"><a href="">Send</a></button>
+            <section class="footerForm">
+                <ul>
+                    <li><form action="URL DE DESTINO" method="post"></form></li>
+                    <li><label for="email">Email:</label></li>
+                    <li><input type="email" id="email" name="email" placeholder="Your email" required></li>
+                    <li><button id="buttonSend" class="buttonActive"><a href="">Send</a></button></li>
+                </ul>
+            </section>
         </div>
         
     </footer>
