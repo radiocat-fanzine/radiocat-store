@@ -188,7 +188,6 @@ p{
     padding-right: 3.125rem;
 }
 
-
 .buttonActive{
     background-color: #A2FAA3;
     border: none;
@@ -239,6 +238,7 @@ footer{
     font-family: "Raleway", serif;
     font-style: normal;
     font-weight: 500;
+    padding: 3rem 3rem 3rem 3rem ;
 }
 
 footer h2{
@@ -261,4 +261,30 @@ img{
 
 .row{
     display: flex;
+    padding: 0 .5rem;
+}
+
+.row .column img {
+    padding: 1rem .5rem ;
+
+}
+.headerVideo{
+    padding: .5rem 0 1rem 0 ;
+}
+
+.headerVideo h2{
+    padding-bottom: .5rem;
+}
+
+.titleTv{
+    color: #F97068;
+    font-size: 2.25rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+.timelapseWatercolor{
+    padding-left: 3rem;
+    padding-right: 30%;
+    padding-bottom: 3rem;
 }
